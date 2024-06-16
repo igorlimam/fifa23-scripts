@@ -3,6 +3,7 @@
 -- To add insult to injury, most regens come with very similar names (I had over 40 players called "Branco")
 -- and many share alike appearances
 -- For that matter, this script removes retiring condition and set all birthdates to a certain time.
+-- birthdate is the number of days stating from 14 october 1582 to the current birth date.
 
 local rows = GetDBTableRows("players")
 
