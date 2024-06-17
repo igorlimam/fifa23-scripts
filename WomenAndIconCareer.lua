@@ -1,7 +1,7 @@
 -- Experimental script, make all players available as free agent in career mode
 -- This script REMOVES women from their respective leagues and teams
 -- Including women and some icon players such as Ronaldinho
--- The icon IDS were taken from the sheet https://docs.google.com/spreadsheets/d/1cDpeenm3RYBi5VPvcvdFChD7kwKB126TTsr4Zf6u_7A/edit?gid=0#gid=0
+-- The icon IDs were taken from the sheet https://docs.google.com/spreadsheets/d/1cDpeenm3RYBi5VPvcvdFChD7kwKB126TTsr4Zf6u_7A/edit?gid=0#gid=0
 
 -- Get all rows for players table
 local icons = {
