@@ -10,9 +10,11 @@ local rows = GetDBTableRows("players")
 local counter = 0;
 for i=1, #rows do
     local player = rows[i]
-    -- 14 August 2006
-    player.birthdate.value = "154802"
+    -- 04/10/2004
+    player.birthdate.value = "154852"
     player.isretiring.value = "0"
+    player.jerseystylecode.value = "1"
+    EditDBTableField(player.jerseystylecode)
     EditDBTableField(player.isretiring)
     EditDBTableField(player.birthdate)
     counter = counter + 1

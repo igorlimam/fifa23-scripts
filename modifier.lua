@@ -1,8 +1,8 @@
 -- Set potential and modifier of your team to 99/5
 -- Search the ID for your particular team
 
--- RomaFC ID
-local teamId = "114912"
+-- RomaFC ID 114912
+local teamId = "115486"
 local rows = GetDBTableRows("players")
 local links = GetDBTableRows("teamplayerlinks")
 
@@ -16,8 +16,13 @@ for i=1, #links do
                 print(player.playerid.value)
                 player.modifier.value = "5"
                 player.potential.value = "99"
+                player.contractvaliduntil.value = "2047"
                 EditDBTableField(player.modifier)
                 EditDBTableField(player.potential)
+                EditDBTableField(player.contractvaliduntil)
+                SetPlayerSharpness(player.playerid.value, 100)
+                SetPlayerForm(player.playerid.value, 100)
+                SetPlayerMorale(player.playerid.value, 100)
                 counter = counter + 1
                 break
             end
