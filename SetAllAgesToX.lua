@@ -11,7 +11,7 @@ local counter = 0;
 for i=1, #rows do
     local player = rows[i]
     -- 04/10/2004
-    player.birthdate.value = "154852"
+    player.birthdate.value = "154853"
     player.isretiring.value = "0"
     player.jerseystylecode.value = "1"
     EditDBTableField(player.jerseystylecode)

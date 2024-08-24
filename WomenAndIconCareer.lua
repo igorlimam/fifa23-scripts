@@ -68,10 +68,11 @@ for index, wPlayer in ipairs(women) do
     for i=1, #links do
         local playerLink = links[i]
         if playerLink.playerid.value == wPlayer.playerid.value then
-            wPlayer.playerjointeamdate.value = joinDate
-            playerLink.teamid.value = teamId
-            EditDBTableField(wPlayer.playerjointeamdate)
-            EditDBTableField(playerLink.teamid)
+            --wPlayer.playerjointeamdate.value = joinDate
+            --playerLink.teamid.value = teamId
+            ReleasePlayerFromTeam(wPlayer.playerid.value)
+            --EditDBTableField(wPlayer.playerjointeamdate)
+            --EditDBTableField(playerLink.teamid)
             break
         end
     end
@@ -83,6 +84,7 @@ for index, iPlayer in ipairs(trueIcons) do
         if playerLink.playerid.value == iPlayer.playerid.value then
             iPlayer.playerjointeamdate.value = joinDate
             playerLink.teamid.value = teamId
+            --ReleasePlayerFromTeam(iPlayer.playerid.value)
             EditDBTableField(iPlayer.playerjointeamdate)
             EditDBTableField(playerLink.teamid)
             break

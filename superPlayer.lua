@@ -1,7 +1,7 @@
 local players = GetDBTableRows("players")
 local growth = GetDBTableRows("career_playergrowthuserseason")
 local links = GetDBTableRows("teamplayerlinks")
-local teamId = "115486"
+local teamId = "110"
 local trait1Hash = "805306330"
 local trait2Hash = "31"
 
