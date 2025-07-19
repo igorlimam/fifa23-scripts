@@ -2,7 +2,7 @@
 -- Search the ID for your particular team
 
 -- RomaFC ID 114912
-local teamId = "115486"
+local teamId = "243"
 local rows = GetDBTableRows("players")
 local links = GetDBTableRows("teamplayerlinks")
 
